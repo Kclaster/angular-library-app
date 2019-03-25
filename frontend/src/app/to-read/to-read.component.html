@@ -1,0 +1,8 @@
+<div *ngFor="let book of books">
+  <ul *ngIf="!book.haveRead">
+    <li>
+      {{ book.title }}
+    </li>
+    <button (click)="onReadIt(book)">Read It</button>
+  </ul>
+</div>
